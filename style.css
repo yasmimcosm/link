@@ -149,12 +149,19 @@
           body {
             background:
             linear-gradient(
-                rgba(0, 0, 0, 0.3),
-                rgba(0, 0, 0, 0.3)
+                rgba(109, 109, 109, 0.1),
+                rgba(201, 201, 201, 0.1)
             ),
             url("/img/pattern.png");
             background-position: center top;
         }
+
+        html {
+        background:
+            radial-gradient(circle at 80% 80%, #321b75, transparent 100%),
+            radial-gradient(circle at 20% 20%, #50246d, transparent 100%),
+        }
+
         .apresentacao {
             margin-top: 50px;
         }
