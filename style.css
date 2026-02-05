@@ -8,7 +8,12 @@
 
     body {
         min-height: 100vh;
-        background: url("/img/pattern.png");
+        background:
+            linear-gradient(
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+            ),
+            url("/img/pattern.png");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -141,6 +146,14 @@
     /* ===== Responsivo ===== */
     @media (max-width: 500px) {
 
+          body {
+            background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+            ),
+            url("/img/pattern.png");
+        }
         .apresentacao {
             margin-top: 50px;
         }
