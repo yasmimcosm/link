@@ -6,36 +6,49 @@
         box-sizing: border-box;
     }
 
-    body {
-        min-height: 100vh;
-        background:
-            linear-gradient(
-            rgba(0, 0, 0, 0.1),
-            rgba(0, 0, 0, 0.1)
-            ),
-            url("/img/pattern.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
     }
 
+
     html {
-        min-height: 100vh;
-        font-family: 'Montserrat', sans-serif;
-        min-height: 100vh;
-        background:
-            radial-gradient(circle at 80% 80%, #231452, transparent 60%),
-            radial-gradient(circle at 20% 20%, #3a1b4e, transparent 60%),
-            /* linear-gradient(120deg, #1b0033, #090012), */
-            linear-gradient(120deg, #08031f, #090012),
-            repeating-linear-gradient(
-            45deg,
-            rgba(255,255,255,0.03),
-            rgba(255,255,255,0.03) 1px,
-            transparent 1px,
-            transparent 6px
-            );
-        color: #ffffff;
+        background-color: #090012;
     }
+
+    body {
+    min-height: 100vh;
+    color: #ffffff;
+
+    background:
+        /* ✨ efeitos leves por cima */
+        radial-gradient(circle at 80% 80%, rgba(40, 13, 118, 0.7), transparent 60%),
+        radial-gradient(circle at 20% 20%, rgba(109, 29, 163, 0.7), transparent 60%),
+
+        /* 👇 ESTE aqui precisa ser transparente */
+        linear-gradient(
+        120deg,
+        rgba(8, 3, 31, 0.6),
+        rgba(9, 0, 18, 0.6)
+        ),
+
+        repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.03),
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px,
+        transparent 6px
+        ),
+
+        /* 🖼️ imagem base */
+        url("/img/pattern.png");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 
     /* ===== Layout geral ===== */
     .conteudo-geral {
@@ -136,7 +149,7 @@
     }
 
     .rodape {
-        padding: 30px 0 80px 0;
+        padding: 40px 0 80px 0;
         display: flex;
         justify-content:center;
         align-items: center;
@@ -145,22 +158,6 @@
 
     /* ===== Responsivo ===== */
     @media (max-width: 500px) {
-
-          body {
-            background:
-            linear-gradient(
-                rgba(109, 109, 109, 0.1),
-                rgba(201, 201, 201, 0.1)
-            ),
-            url("/img/pattern.png");
-            background-position: center top;
-        }
-
-        html {
-        background:
-            radial-gradient(circle at 80% 80%, #321b75, transparent 100%),
-            radial-gradient(circle at 20% 20%, #50246d, transparent 100%),
-        }
 
         .apresentacao {
             margin-top: 50px;
