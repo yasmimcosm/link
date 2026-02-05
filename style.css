@@ -153,6 +153,7 @@
                 rgba(0, 0, 0, 0.3)
             ),
             url("/img/pattern.png");
+            background-position: center top;
         }
         .apresentacao {
             margin-top: 50px;
