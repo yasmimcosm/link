@@ -4,96 +4,166 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yasmim Silva Cosme</title>
+  <meta name="description" content="Yasmim Silva Cosme — Graduanda em Ciência da Computação, foco em Engenharia de Software. Currículo Lattes, LinkedIn, GitHub e contato." />
+  <meta name="theme-color" content="#8fbb79" />
+
+  <!-- Pré-visualização ao compartilhar o link -->
+  <meta property="og:title" content="Yasmim Silva Cosme" />
+  <meta property="og:description" content="Graduanda em Ciência da Computação | Foco em Engenharia de Software" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:image" content="./img/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
-  <link rel="icon" href="img/logo.png">
+  <link rel="icon" href="img/logo.png" />
 </head>
 
 <body>
+  <!-- Ícones e ornamentos (sprite) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <defs>
+      <linearGradient id="gSino" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fdfde6" />
+        <stop offset="1" stop-color="#eaf0bd" />
+      </linearGradient>
+    </defs>
+
+    <!-- Ícones -->
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.56v13.67a2.9 2.9 0 0 1-2.9 2.9 2.9 2.9 0 1 1 2.9-2.9c0-.16-.01-.32-.04-.47V11.6a6.45 6.45 0 1 0 3.6 5.8V10.2a8.36 8.36 0 0 0 4.9 1.58V8.22a4.85 4.85 0 0 1-1.13-.13Z" fill="currentColor" stroke="none"/></symbol>
+
+    <!-- Brilho de quatro pontas -->
+    <symbol id="brilho" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 0 C13 8 16 11 24 12 C16 13 13 16 12 24 C11 16 8 13 0 12 C8 11 11 8 12 0Z"/>
+    </symbol>
+
+    <!-- Flor-sino (lírio-do-vale) -->
+    <symbol id="sino" viewBox="0 0 120 92">
+      <path fill="#cfe6b9" d="M16 76 C34 70 86 70 104 76 C98 90 22 90 16 76Z"/>
+      <ellipse cx="48" cy="85" rx="3" ry="4.5" fill="#f08a63" transform="rotate(14 48 85)"/>
+      <ellipse cx="72" cy="85" rx="3" ry="4.5" fill="#f08a63" transform="rotate(-14 72 85)"/>
+      <path fill="url(#gSino)" d="M8 78 C20 72 24 60 24 44 C24 20 40 4 60 4 C80 4 96 20 96 44 C96 60 100 72 112 78 C104 84 96 82 90 78 C82 86 72 84 66 78 C60 84 52 86 46 78 C40 84 32 84 30 78 C22 84 14 84 8 78Z"/>
+    </symbol>
+  </svg>
+
+  <!-- Cenário -->
+  <div class="cenario" aria-hidden="true">
+    <div class="lua"></div>
+
+    <!-- Folhas, canto inferior direito -->
+    <svg class="deco folhas" viewBox="0 0 200 260">
+      <path fill="#5f9a55" d="M200 260 C192 180 150 100 66 36 C122 112 142 188 130 260Z"/>
+      <path fill="#4d8a4a" opacity=".8" d="M200 260 C204 200 190 150 156 110 C174 160 176 210 168 260Z"/>
+    </svg>
+
+    <!-- Ramos com sinos, canto superior direito -->
+    <svg class="deco topo" viewBox="0 0 220 260">
+      <g fill="none" stroke="#5f9a55" stroke-width="7" stroke-linecap="round">
+        <path d="M224 -8 C192 40 142 62 112 116"/>
+        <path d="M190 24 C184 46 174 60 160 72"/>
+      </g>
+      <use href="#sino" x="66" y="110" width="94" height="72"/>
+      <use href="#sino" x="128" y="68" width="62" height="47"/>
+    </svg>
+
+    <!-- Ramos com sinos, canto inferior esquerdo -->
+    <svg class="deco base" viewBox="0 0 260 320">
+      <path fill="#5f9a55" opacity=".85" d="M0 320 C16 262 66 228 130 222 C90 246 40 276 22 320Z"/>
+      <g fill="none" stroke="#5f9a55" stroke-width="7" stroke-linecap="round">
+        <path d="M30 322 C34 236 66 160 122 112"/>
+        <path d="M78 322 C92 262 150 214 192 196"/>
+      </g>
+      <use href="#sino" x="76" y="108" width="94" height="72"/>
+      <use href="#sino" x="162" y="192" width="66" height="50"/>
+    </svg>
+
+    <!-- Brilhos -->
+    <svg class="brilho b1"><use href="#brilho"/></svg>
+    <svg class="brilho b2"><use href="#brilho"/></svg>
+    <svg class="brilho b3"><use href="#brilho"/></svg>
+    <svg class="brilho b4"><use href="#brilho"/></svg>
+
+    <p class="vertical">Ciência da Computação · Engenharia de Software</p>
+  </div>
+
   <main class="conteudo-geral">
 
     <!-- Apresentação -->
     <header class="apresentacao">
       <div class="perfil">
-        <img src="./img/logo.png" alt="Foto de perfil">
+        <img src="./img/yasmim-cosme.jpeg" alt="Foto de perfil de Yasmim Silva Cosme" />
+        <svg class="brilho p1" aria-hidden="true"><use href="#brilho"/></svg>
+        <svg class="brilho p2" aria-hidden="true"><use href="#brilho"/></svg>
       </div>
 
-
       <h1>Yasmim Silva Cosme</h1>
-      <p class="subtitulo">
-        Estudante de Ciência da Computação • Pesquisa STEM & Cultura Maker
-      </p>
+      <p class="cargo">Graduanda em Ciência da Computação</p>
+      <p class="foco">Foco em Engenharia de Software</p>
+
+      <ul class="tags" aria-label="Áreas de interesse">
+        <li>Back-end</li>
+        <li>Java &amp; C++ &amp; PHP</li>
+        <li>Desenvolvimento de Software</li>
+      </ul>
     </header>
 
-    <!-- Redes sociais -->
-    <section class="icones" aria-label="Redes sociais">
-      <a 
-        href="https://www.instagram.com/yasmimcosm" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="Instagram de Yasmim Cosme"
-      >
-        <img src="./img/instagram.png" alt="Ícone do Instagram" />
-      </a>
-
-      <a 
-        href="https://wa.me/98984392704" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="WhatsApp de Yasmim Cosme"
-      >
-        <img src="./img/whatsapp.png" alt="Ícone do WhatsApp" />
-      </a>
-
-      <a 
-        href="https://github.com/yasmimcosm" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="GitHub de Yasmim Cosme"
-      >
-        <img src="./img/github.png" alt="Ícone do GitHub" />
-      </a>
-
-      <a 
-        href="https://www.linkedin.com/in/yasmimcosme" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="LinkedIn de Yasmim Cosme"
-      >
-        <img src="./img/linkedin.png" alt="Ícone do LinkedIn" />
-      </a>
-    </section>
-
     <!-- Links principais -->
-    <section class="links" aria-label="Links importantes">
-      <a 
-        href="http://lattes.cnpq.br/2438836945632593" 
-        class="btn" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        Currículo Lattes
+    <nav class="links" aria-label="Links principais">
+      <a class="btn" href="http://lattes.cnpq.br/2438836945632593" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icone"><svg class="ico" aria-hidden="true"><use href="#i-file"/></svg></span>
+        <span class="btn-texto">
+          <strong>Currículo Lattes</strong>
+          <small>Formação e produção acadêmica</small>
+        </span>
+        <span class="btn-seta"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
       </a>
 
-      <a href="mailto:yasmim@gmail.com" class="btn">
-        Entrar em contato - Gmail
+      <a class="btn" href="https://www.linkedin.com/in/yasmimcosme" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icone"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+        <span class="btn-texto">
+          <strong>LinkedIn</strong>
+          <small>Perfil profissional</small>
+        </span>
+        <span class="btn-seta"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
       </a>
 
-      <a 
-        href="https://www.linkedin.com/in/yasmimcosme" 
-        class="btn" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        LinkedIn
+      <a class="btn" href="https://github.com/yasmimcosm" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icone"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></span>
+        <span class="btn-texto">
+          <strong>GitHub</strong>
+          <small>Projetos e códigos</small>
+        </span>
+        <span class="btn-seta"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
       </a>
-      
-      <a 
-        href="https://www.instagram.com/yasmimcosm" 
-        class="btn" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        Instagram
+
+      <a class="btn destaque" href="mailto:yasmim@gmail.com">
+        <span class="btn-icone"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <span class="btn-texto">
+          <strong>Entrar em contato</strong>
+          <small>Envie um e-mail</small>
+        </span>
+        <span class="btn-seta"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+    </nav>
+
+    <!-- Outros canais -->
+    <section class="icones" aria-label="Outros canais">
+      <a href="https://www.instagram.com/yasmimcosm" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Yasmim Cosme">
+        <svg class="ico"><use href="#i-instagram"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@cosmitax" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Yasmim Cosme">
+        <svg class="ico"><use href="#i-tiktok"/></svg>
+      </a>
+      <a href="https://wa.me/5598984392704" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Yasmim Cosme">
+        <svg class="ico"><use href="#i-whatsapp"/></svg>
       </a>
 
     </section>
@@ -101,7 +171,7 @@
   </main>
 
   <footer class="rodape">
-    <p>© 2026 • Desenvolvido por Yasmim Silva Cosme</p>
+    <p>© 2026 Yasmim Silva Cosme</p>
   </footer>
 </body>
 </html>
